@@ -1,7 +1,7 @@
 Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Date: 2015-05-19
 Authors@R: as.person(c(
     "Nathan Mantua <nate.mantua@noaa.gov> [aut]",
@@ -21,4 +21,5 @@ Suggests:
     readr (>= 0.1.1),
     tidyr (>= 0.2.0),
     dplyr (>= 0.4.2),
-    devtools (>= 1.8.0)
+    devtools (>= 1.8.0),
+    ggplot2 (>= 1.0.1)

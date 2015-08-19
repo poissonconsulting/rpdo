@@ -18,7 +18,6 @@ pdo %<>% read_csv()
 pdo %<>% gather("Month", "PDO", -YEAR)
 pdo %<>% rename(Year = YEAR)
 pdo %<>% mutate(Month = as.integer(Month))
-pdo %<>% filter(!is.na(PDO))
 
 use_data(pdo, overwrite = TRUE)
 

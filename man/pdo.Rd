@@ -3,12 +3,13 @@
 \docType{data}
 \name{pdo}
 \alias{pdo}
+\alias{rpdo}
 \title{Pacific Decadal Oscillation Index}
 \format{A data.frame:
 \describe{
   \item{Year}{The year as an integer.}
   \item{Month}{The month as an integer.}
-  \item{PDO}{The Pacific Decadal Oscillation (PDO) Index as a numeric.}
+  \item{PDO}{The Pacific Decadal Oscillation index as a numeric.}
 }}
 \usage{
 pdo
@@ -40,6 +41,15 @@ Data sources for this index are:
   UKMO Historical SST data set for 1900-81;
 Reynold's Optimally Interpolated SST (V1) for January 1982-Dec 2001)
 *** OI SST Version 2 (V2) beginning January 2002 -
+}
+\examples{
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+
+data(pdo)
+pdo \%<>\% group_by(Year) \%>\% summarise(PDO = mean(PDO))
+ggplot(data = pdo, aes(x = Year, y = PDO)) + geom_line()
 }
 \seealso{
 \url{http://research.jisao.washington.edu/pdo/PDO.latest}

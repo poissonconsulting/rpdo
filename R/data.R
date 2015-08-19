@@ -31,6 +31,15 @@
 #' \describe{
 #'   \item{Year}{The year as an integer.}
 #'   \item{Month}{The month as an integer.}
-#'   \item{PDO}{The Pacific Decadal Oscillation (PDO) Index as a numeric.}
+#'   \item{PDO}{The Pacific Decadal Oscillation index as a numeric.}
 #' }
+#' @examples
+#' library(magrittr)
+#' library(dplyr)
+#' library(ggplot2)
+#'
+#' data(pdo)
+#' pdo %<>% group_by(Year) %>% summarise(PDO = mean(PDO))
+#' ggplot(data = pdo, aes(x = Year, y = PDO)) + geom_line()
+#' @aliases rpdo
 "pdo"
