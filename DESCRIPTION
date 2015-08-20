@@ -2,12 +2,11 @@ Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index
 Version: 0.0.1
-Date: 2015-05-20
-Authors@R: as.person(c(
-    "Joe Thorley <joe@poissonconsulting.ca> [aut, cre]",
-    "Nathan Mantua <nate.mantua@noaa.gov> [aut]",
-    "Stephen Hare <hare@iphc.washington.edu> [aut]"
-    ))
+Date: 2015-08-20
+Authors@R: c(
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = "cre"),
+    person("Nathan", "Mantua", email = "nate.mantua@noaa.gov", role = "aut"),
+    person("Stephen", "Hare", email = "hare@iphc.washington.edu", role = "aut"))
 Description: Monthly Pacific Decadal Oscillation (PDO) index
   values from January 1900 to present.
 License: CC0
