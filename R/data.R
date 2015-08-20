@@ -1,7 +1,7 @@
 #' Pacific Decadal Oscillation Index
 #'
 #' Monthly Pacific Decadal Oscillation (PDO) index
-#' values from January 1900 to July 2015.
+#' values from January 1900 to present.
 #'
 #' Updated standardized values for the PDO index, derived as the
 #' leading PC of monthly SST anomalies in the North Pacific Ocean,

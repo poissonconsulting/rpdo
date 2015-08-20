@@ -1,7 +1,7 @@
 Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index
-Version: 0.0.0.9003
+Version: 0.0.1
 Date: 2015-05-20
 Authors@R: as.person(c(
     "Joe Thorley <joe@poissonconsulting.ca> [aut, cre]",
@@ -9,7 +9,7 @@ Authors@R: as.person(c(
     "Stephen Hare <hare@iphc.washington.edu> [aut]"
     ))
 Description: Monthly Pacific Decadal Oscillation (PDO) index
-  values from January 1900 to July 2015.
+  values from January 1900 to present.
 License: CC0
 URL: https://github.com/poissonconsulting/rpdo
 LazyData: true

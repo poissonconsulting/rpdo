@@ -16,7 +16,7 @@ pdo
 }
 \description{
 Monthly Pacific Decadal Oscillation (PDO) index
-values from January 1900 to July 2015.
+values from January 1900 to present.
 }
 \details{
 Updated standardized values for the PDO index, derived as the
