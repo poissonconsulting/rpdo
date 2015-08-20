@@ -28,4 +28,4 @@ Data sources for this index are:
  Reynold's Optimally Interpolated SST (V1) for January 1982-Dec 2001)
 *** OI SST Version 2 (V2) beginning January 2002 -   
 
-See also <http://research.jisao.washington.edu/pdo/PDO.latest>.
+See also <http://research.jisao.washington.edu/pdo/PDO.latest>
