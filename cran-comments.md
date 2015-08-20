@@ -6,9 +6,13 @@
 
 ## R CMD check results
 
-Status: OK
+There were no ERRORs or WARNINGs. 
 
-R CMD check succeeded
+Status: 1 NOTE
+
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: Joe Thorley <joe@poissonconsulting.ca>
+New submission
 
 ## Downstream dependencies
 
