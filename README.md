@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
+
 # Pacific Decadal Oscillation Index
 
 Monthly Pacific Decadal Oscillation (PDO) index 
