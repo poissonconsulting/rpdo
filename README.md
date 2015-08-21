@@ -30,3 +30,15 @@ Data sources for this index are:
 *** OI SST Version 2 (V2) beginning January 2002 -   
 
 See also <http://research.jisao.washington.edu/pdo/PDO.latest>.
+
+## Installation
+
+To install and load the most recent release from CRAN
+
+```
+install.packages("rpdo")
+library(rpdo)
+data(pdo)
+head(pdo)
+```
+
