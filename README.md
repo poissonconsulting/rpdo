@@ -34,11 +34,14 @@ See also <http://research.jisao.washington.edu/pdo/PDO.latest>.
 ## Installation
 
 To install and load the most recent release from CRAN
-
 ```
 install.packages("rpdo")
 library(rpdo)
-data(pdo)
-head(pdo)
 ```
 
+## Information
+
+For more information type after loading the package
+```
+?rpdo
+```
