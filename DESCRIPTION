@@ -15,10 +15,12 @@ LazyData: true
 Depends:
     R (>= 3.2.2)
 Suggests:
-    curl (>= 0.9.2),
-    magrittr (>= 1.5),
-    readr (>= 0.1.1),
-    tidyr (>= 0.2.0),
-    dplyr (>= 0.4.2),
-    devtools (>= 1.8.0),
-    ggplot2 (>= 1.0.1)
+    curl,
+    magrittr,
+    readr,
+    tidyr,
+    dplyr,
+    devtools,
+    assertr,
+    lubridate,
+    ggplot2
