@@ -1,4 +1,4 @@
-# rpdo v0.0.2
+# rpdo v0.2.0
 
 ## Test environments
 
