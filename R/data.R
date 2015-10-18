@@ -39,7 +39,7 @@
 #' library(ggplot2)
 #'
 #' data(pdo)
-#' pdo %<>% group_by(Year) %>% summarise(PDO = mean(PDO))
+#' pdo %<>% filter(Year != 2015) %>% group_by(Year) %>% summarise(PDO = mean(PDO))
 #' ggplot(data = pdo, aes(x = Year, y = PDO)) + geom_line()
 #' @aliases rpdo
 "pdo"

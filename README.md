@@ -6,6 +6,33 @@ Pacific Decadal Oscillation Index
 
 Monthly Pacific Decadal Oscillation (PDO) index values from January 1900 to present.
 
+``` r
+library(magrittr)
+library(dplyr)
+```
+
+    ## 
+    ## Attaching package: 'dplyr'
+    ## 
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
+    ## 
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
+
+``` r
+library(ggplot2)
+library(rpdo)
+
+data(pdo)
+pdo %<>% filter(Year != 2015) %>% group_by(Year) %>% summarise(PDO = mean(PDO))
+ggplot(data = pdo, aes(x = Year, y = PDO)) + geom_line()
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
+
 Updated standardized values for the PDO index, derived as the leading PC of monthly SST anomalies in the North Pacific Ocean, poleward of 20N. The monthly mean global average SST anomalies are removed to separate this pattern of variability from any "global warming" signal that may be present in the data.
 
 For more details, see:
