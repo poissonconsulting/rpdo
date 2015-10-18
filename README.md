@@ -39,6 +39,12 @@ install.packages("rpdo")
 library(rpdo)
 ```
 
+To install and load the development version from GitHub
+```
+devtools::install_github("rpdo@dev")
+library(rpdo)
+```
+
 ## Information
 
 For more information type after loading the package
