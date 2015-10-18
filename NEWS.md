@@ -1,4 +1,4 @@
-# rpdo v0.0.2
+# rpdo v0.1.0
 
 - Added values for August and September 2015.
 
