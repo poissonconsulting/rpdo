@@ -12,7 +12,7 @@ License: CC0
 URL: https://github.com/poissonconsulting/rpdo
 LazyData: true
 Depends:
-    R (>= 3.2.2)
+    R (>= 3.2.0)
 Suggests:
     curl,
     magrittr,
