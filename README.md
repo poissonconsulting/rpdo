@@ -11,7 +11,8 @@ library(rpdo)
 library(ggplot2)
 
 data(pdo)
-ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line()
+ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
 ![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
