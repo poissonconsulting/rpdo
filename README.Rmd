@@ -10,12 +10,12 @@ output:
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](http://cran.r-project.org/package=rpdo)
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
 
-# Pacific Decadal Oscillation Index
+# rpdo
 
-Monthly Pacific Decadal Oscillation (PDO) index 
+An R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from January 1900 to present.
 
-```{r echo = FALSE, message = FALSE}
+```{r}
 library(rpdo)
 library(ggplot2)
 
@@ -61,11 +61,3 @@ To install and load the development version from GitHub
 devtools::install_github("rpdo")
 library(rpdo)
 ```
-
-## Information
-
-For more information type after loading the package
-```
-?rpdo
-```
-
