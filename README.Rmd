@@ -15,7 +15,7 @@ output:
 An R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from January 1900 to present.
 
-```{r fig.width = 1, fig.height = 8}
+```{r fig.width = 6, fig.height = 9.5}
 library(rpdo)
 library(ggplot2)
 
