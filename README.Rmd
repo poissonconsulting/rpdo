@@ -16,14 +16,11 @@ Monthly Pacific Decadal Oscillation (PDO) index
 values from January 1900 to present.
 
 ```{r echo = FALSE, message = FALSE}
-library(magrittr)
-library(dplyr)
-library(ggplot2)
 library(rpdo)
+library(ggplot2)
 
 data(pdo)
-pdo %<>% filter(Year != 2015) %>% group_by(Year) %>% summarise(PDO = mean(PDO))
-ggplot(data = pdo, aes(x = Year, y = PDO)) + geom_line()
+ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line()
 ```
 
 Updated standardized values for the PDO index, derived as the 
