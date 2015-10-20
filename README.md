@@ -30,7 +30,7 @@ To install and load the most recent release from CRAN
 
 To install and load the development version from GitHub
 
-    devtools::install_github("rpdo@dev")
+    devtools::install_github("rpdo")
     library(rpdo)
 
 Information
