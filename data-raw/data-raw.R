@@ -17,13 +17,15 @@ pdo %<>% readLines()
 
 pdo <- pdo[grepl("(^YEAR)|(^\\d{4,4}[*]{0,2})\\s", pdo)]
 pdo %<>% strsplit(" ")
-pdo %<>% lapply(function (x) x[grepl(".+", x)])
-pdo %<>% sapply(function (x) paste(x, collapse = ","))
+pdo %<>% lapply(function(x) x[grepl(".+", x)])
+pdo %<>% lapply(function(x) c(x, rep(NA,13 - length(x))))
+pdo %<>% sapply(function(x) paste(x, collapse = ","))
 pdo %<>% paste(collapse = "\n")
 pdo %<>% read_csv()
 pdo %<>% gather("Month", "PDO", -YEAR)
 pdo %<>% rename(Year = YEAR)
-pdo %<>% mutate(Month = as.integer(Month))
+pdo$Year %<>% sub("[*]+", "", .)
+pdo %<>% mutate(Year = as.integer(Year), Month = as.integer(Month))
 pdo %<>% na.omit()
 pdo %<>% arrange(Year, Month)
 
