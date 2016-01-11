@@ -23,7 +23,7 @@ ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line() +
 Further Information
 -------------------
 
-For more information see `vignette("rpdo")` and <http://research.jisao.washington.edu/pdo/PDO.latest>.
+For more information install the package and then run `vignette("rpdo")`.
 
 Installation
 ------------
