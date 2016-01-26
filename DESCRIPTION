@@ -16,7 +16,7 @@ Depends:
 Suggests:
     assertr,
     curl,
-    datacheckr (>= 0.2.0),
+    datacheckr (>= 0.1.0),
     devtools,
     dplyr,
     ggplot2,
