@@ -19,7 +19,10 @@ ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)<!-- -->
+<img src="README_files/figure-markdown_github/unnamed-chunk-1-1.png" alt="Pacific Decadal Oscillation (PDO) Index for January by year."  />
+<p class="caption">
+Pacific Decadal Oscillation (PDO) Index for January by year.
+</p>
 
 Further Information
 -------------------
