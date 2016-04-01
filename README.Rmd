@@ -17,12 +17,13 @@ output:
 rpdo is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from January 1900 to present.
 
-```{r, fig.width=10, fig.height=10}
+```{r, fig.width=5, fig.height=5}
 library(rpdo)
 library(ggplot2)
 
 data(pdo)
-ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + geom_line() +
+ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + 
+  geom_line() + scale_y_continuous(name = "January PDO Index") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 

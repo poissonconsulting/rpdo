@@ -17,7 +17,8 @@
 #' library(ggplot2)
 #'
 #' data(pdo)
-#' ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + geom_line() +
-#'   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+#' ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
+#'  geom_line() + scale_y_continuous(name = "January PDO Index") +
+#'  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 #' @aliases rpdo
 "pdo"
