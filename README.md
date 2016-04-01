@@ -15,8 +15,7 @@ library(ggplot2)
 
 data(pdo)
 ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + 
-  geom_line() + scale_y_continuous(name = "January PDO Index") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+  geom_line() + ylab("January PDO Index")
 ```
 
 <img src="README_files/figure-markdown_github/unnamed-chunk-1-1.png" alt="Pacific Decadal Oscillation (PDO) Index for January by year."  />
