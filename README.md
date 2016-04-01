@@ -12,13 +12,17 @@ rpdo is an R data package of Monthly Pacific Decadal Oscillation (PDO) index val
 ``` r
 library(rpdo)
 library(ggplot2)
+```
 
+    ## Warning: package 'ggplot2' was built under R version 3.2.4
+
+``` r
 data(pdo)
-ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line() +
+ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + geom_line() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
+![](README_files/figure-markdown_github/unnamed-chunk-1-1.png)<!-- -->
 
 Further Information
 -------------------

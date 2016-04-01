@@ -22,9 +22,12 @@ values from January 1900 to present.
 For more information see \code{vignette("rpdo")}.
 }
 \examples{
+library(rpdo)
 library(ggplot2)
+
 data(pdo)
-ggplot(data = pdo, aes(x = Year, y = PDO)) + facet_wrap(~Month) + geom_line()
+ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + geom_line() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 }
 \seealso{
 \url{http://research.jisao.washington.edu/pdo/PDO.latest}
