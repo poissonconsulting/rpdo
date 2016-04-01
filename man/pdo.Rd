@@ -26,8 +26,8 @@ library(rpdo)
 library(ggplot2)
 
 data(pdo)
-ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + geom_line() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
+ geom_line() + ylab("January PDO Index")
 }
 \seealso{
 \url{http://research.jisao.washington.edu/pdo/PDO.latest}
