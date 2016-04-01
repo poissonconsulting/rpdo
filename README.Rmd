@@ -17,7 +17,7 @@ output:
 rpdo is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from January 1900 to present.
 
-```{r, fig.width=5, fig.height=5}
+```{r, fig.width=5, fig.height=5, warning=FALSE}
 library(rpdo)
 library(ggplot2)
 
