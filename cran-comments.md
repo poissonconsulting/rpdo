@@ -6,7 +6,7 @@
 
 ## R CMD check results
 
-There were no ERRORs or WARNINGs
+There were no ERRORs or WARNINGs.
 
 There was 1 NOTE:
 
@@ -14,10 +14,10 @@ There was 1 NOTE:
 Maintainer: 'Joe Thorley <joe@poissonconsulting.ca>'
 
 Possibly mis-spelled words in DESCRIPTION:
-  Decadal (3:16, 9:30)
-  PDO (9:51)
-
-**These words are correctly spelled.**  
+  Decadal (3:16, 10:30)
+  PDO (10:51)
+  
+**Decadal and PDO are correctly spelt.**
 
 ## Downstream dependencies
 
