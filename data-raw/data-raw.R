@@ -1,42 +1,5 @@
-library(curl)
-library(magrittr)
-library(readr)
-library(tidyr)
-library(dplyr)
-library(rpdo)
-library(assertr)
-library(lubridate)
 library(devtools)
+library(rpdo)
 
-data(pdo)
-old_pdo <- pdo
-
-pdo <- tempfile()
-curl_download("http://research.jisao.washington.edu/pdo/PDO.latest", pdo)
-pdo %<>% readLines()
-
-pdo <- pdo[grepl("(^YEAR)|(^\\d{4,4}[*]{0,2})\\s", pdo)]
-pdo %<>% strsplit(" ")
-pdo %<>% lapply(function(x) x[grepl(".+", x)])
-pdo %<>% lapply(function(x) c(x, rep(NA,13 - length(x))))
-pdo %<>% sapply(function(x) paste(x, collapse = ","))
-pdo %<>% paste(collapse = "\n")
-pdo %<>% read_csv()
-pdo %<>% gather("Month", "PDO", -YEAR)
-pdo %<>% rename(Year = YEAR)
-pdo$Year %<>% sub("[*]+", "", .)
-pdo$Month %<>% toupper()
-pdo$Month %<>% factor(levels = toupper(as.character(month(1:12, label = TRUE))))
-pdo %<>% mutate(Year = as.integer(Year), Month = as.integer(Month))
-pdo %<>% na.omit()
-pdo %<>% arrange(Year, Month)
-
-stopifnot(nrow(old_pdo) < nrow(pdo))
-
-old_pdo %<>% left_join(pdo, by = c("Year", "Month")) %>% verify(PDO.x == PDO.y)
-
-pdo %<>% verify(!is.na(PDO)) %>% verify(abs(PDO) < 4) %>%
-  verify(Month %in% 1:12) %>% verify(Year %in% 1900:year(Sys.Date())) %>%
-  verify(diff(Month) %in% c(1, -11)) %>% verify(diff(Year) %in% c(0, 1))
-
+pdo <- download_pdo()
 use_data(pdo, overwrite = TRUE)
