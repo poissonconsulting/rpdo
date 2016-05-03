@@ -26,6 +26,9 @@ ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
   geom_line() + ylab("January PDO Index")
 ```
 
+It also provides the function `download_pdo()` to download the most recent 
+data from the website.
+
 ## Further Information
 
 For more information install the package and then 

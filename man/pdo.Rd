@@ -3,7 +3,6 @@
 \docType{data}
 \name{pdo}
 \alias{pdo}
-\alias{rpdo}
 \title{Pacific Decadal Oscillation Index}
 \format{A tbl data frame:
 \describe{

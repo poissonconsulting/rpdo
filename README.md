@@ -23,6 +23,8 @@ ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
 Pacific Decadal Oscillation (PDO) Index for January by year.
 </p>
 
+It also provides the function `download_pdo()` to download the most recent data from the website.
+
 Further Information
 -------------------
 
