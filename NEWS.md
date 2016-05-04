@@ -2,8 +2,9 @@
 
 ## rpdo v0.2.0
 
-- Added function `download_pdo` to allow users to get most recent data between releases.
+- Added function `download_pdo` to allow users to get most recent data from web.
 - Added values for March 2016.
+- Moved `vignette("rpdo")` information to README.
 
 ## rpdo v0.1.2
 

@@ -49,8 +49,6 @@ check_pdo <- function (pdo) {
   if (any(is.na(old_pdo$PDO.x))) stop("missing PDO index data", call. = FALSE)
   if (any(old_pdo$PDO.x != old_pdo$PDO.y)) stop("incorrect PDO index data", call. = FALSE)
 
-  pdo %<>% dplyr::arrange_(~Year, ~Month)
-
   if (!any(diff(pdo$Month) %in% c(1, -11))) stop("missing PDO index data", call. = FALSE)
   if (!any(diff(pdo$Year) %in% c(0, 1))) stop("missing PDO index data", call. = FALSE)
   invisible(pdo)
@@ -60,6 +58,8 @@ check_pdo <- function (pdo) {
 #'
 #' Downloads PDO index data from
 #' \url{http://research.jisao.washington.edu/pdo/PDO.latest}.
+#'
+#' For more information see \url{https://github.com/poissonconsulting/rpdo}.
 #'
 #' @return A tbl data.frame of the PDO index data.
 #' @export

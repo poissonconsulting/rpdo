@@ -13,4 +13,7 @@ A tbl data.frame of the PDO index data.
 Downloads PDO index data from
 \url{http://research.jisao.washington.edu/pdo/PDO.latest}.
 }
+\details{
+For more information see \url{https://github.com/poissonconsulting/rpdo}.
+}
 

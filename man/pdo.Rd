@@ -18,7 +18,7 @@ Monthly Pacific Decadal Oscillation (PDO) index
 values from January 1900 to present.
 }
 \details{
-For more information see \code{vignette("rpdo")}.
+For more information see \url{https://github.com/poissonconsulting/rpdo}.
 }
 \examples{
 library(rpdo)
@@ -27,9 +27,6 @@ library(ggplot2)
 data(pdo)
 ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
  geom_line() + ylab("January PDO Index")
-}
-\seealso{
-\url{http://research.jisao.washington.edu/pdo/PDO.latest}
 }
 \keyword{datasets}
 
