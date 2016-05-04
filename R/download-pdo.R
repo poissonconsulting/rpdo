@@ -29,7 +29,7 @@ tidy_pdo <- function (pdo) {
   pdo$Month %<>% toupper()
   pdo$Month %<>% factor(levels = toupper(as.character(lubridate::month(1:12, label = TRUE))))
   pdo %<>% dplyr::mutate_(.dots = list(Year = ~as.integer(Year), Month = ~as.integer(Month)))
-  pdo %<>% na.omit()
+  pdo %<>% dplyr::filter_(~!is.na(PDO))
   pdo %<>% dplyr::arrange_(~Year, ~Month)
   pdo %<>% dplyr::as.tbl()
   pdo

@@ -2,7 +2,7 @@
 
 * local OS X install, R 3.2.5
 * ubuntu (travis-ci)
-* win-builder (devel and release)
+* win-builder R 3.3.0
 
 ## R CMD check results
 
