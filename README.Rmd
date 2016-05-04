@@ -22,7 +22,7 @@ library(rpdo)
 library(ggplot2)
 
 ggplot(data = subset(rpdo::pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + 
-  geom_line() + ylab("January PDO Index")
+  geom_smooth(span = 0.1, se = FALSE, color = "black") + geom_point() + ylab("January PDO Index")
 ```
 
 `rpdo` also provides the function `download_pdo()` to scrape the most recent 
