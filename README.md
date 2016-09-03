@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](http://cran.r-project.org/package=rpdo) [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
+[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo) [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
 
 rpdo
 ====
@@ -17,10 +17,7 @@ ggplot(data = subset(rpdo::pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
   geom_smooth(span = 0.1, se = FALSE, color = "black") + geom_point() + ylab("January PDO Index")
 ```
 
-<img src="README_files/figure-markdown_github/unnamed-chunk-1-1.png" alt="Pacific Decadal Oscillation (PDO) Index for January by year."  />
-<p class="caption">
-Pacific Decadal Oscillation (PDO) Index for January by year.
-</p>
+![Pacific Decadal Oscillation (PDO) Index for January by year.](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
 `rpdo` also provides the function `download_pdo()` to scrape the most recent data from the website <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
