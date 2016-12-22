@@ -1,5 +1,9 @@
 # rpdo NEWS
 
+## rpdo v0.2.1
+
+- Added values until November 2016.
+
 ## rpdo v0.2.0
 
 - Added function `download_pdo` to allow users to get most recent data from web.

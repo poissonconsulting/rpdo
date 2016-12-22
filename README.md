@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo) [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
+[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](http://cran.r-project.org/package=rpdo) [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
 
 rpdo
 ====
@@ -7,7 +7,7 @@ rpdo
 PDO Index
 ---------
 
-`rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index values from January 1900 to present.
+`rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index values from January 1900.
 
 ``` r
 library(rpdo)
@@ -16,6 +16,8 @@ library(ggplot2)
 ggplot(data = subset(rpdo::pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + 
   geom_smooth(span = 0.1, se = FALSE, color = "black") + geom_point() + ylab("January PDO Index")
 ```
+
+    ## `geom_smooth()` using method = 'loess'
 
 ![Pacific Decadal Oscillation (PDO) Index for January by year.](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
