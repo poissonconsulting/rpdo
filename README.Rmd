@@ -8,7 +8,7 @@ output:
 
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
-[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://hadley.shinyapps.io/cran-downloads)
+[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)]( https://CRAN.R-project.org/package=rpdo)
 
 # rpdo
 
