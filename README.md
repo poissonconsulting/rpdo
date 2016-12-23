@@ -14,10 +14,8 @@ library(rpdo)
 library(ggplot2)
 
 ggplot(data = subset(rpdo::pdo, pdo$Month == 1), aes(x = Year, y = PDO)) + 
-  geom_smooth(span = 0.1, se = FALSE, color = "black") + geom_point() + ylab("January PDO Index")
+geom_smooth(span = 0.1, se = FALSE, color = "black", method = 'loess') + geom_point() + ylab("January PDO Index")
 ```
-
-    ## `geom_smooth()` using method = 'loess'
 
 ![Pacific Decadal Oscillation (PDO) Index for January by year.](README_files/figure-markdown_github/unnamed-chunk-1-1.png)
 
