@@ -14,8 +14,7 @@
 pdo
 }
 \description{
-Monthly Pacific Decadal Oscillation (PDO) index
-values from January 1900 to November 2016.
+Monthly Pacific Decadal Oscillation (PDO) index values.
 }
 \details{
 For more information see \url{https://github.com/poissonconsulting/rpdo}.
