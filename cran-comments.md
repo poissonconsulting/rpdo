@@ -11,13 +11,16 @@ There were no ERRORs or WARNINGs.
 There was 1 NOTE:
 
 * checking CRAN incoming feasibility ... NOTE
+
 Maintainer: 'Joe Thorley <joe@poissonconsulting.ca>'
 
 Possibly mis-spelled words in DESCRIPTION:
-  Decadal (3:16, 10:39)
-  PDO (10:60)
+  Decadal (3:16, 10:30)
+  PDO (10:51)
+  pdo (11:54)
+  tibble (11:58)
   
-**Decadal and PDO are correctly spelt.**
+**All four words are correctly spelt.**
 
 ## Downstream dependencies
 
