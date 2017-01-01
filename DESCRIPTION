@@ -1,7 +1,7 @@
 Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index Data
-Version: 0.2.1
+Version: 0.2.1.9000
 Date: 2017-01-01
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
