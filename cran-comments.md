@@ -1,3 +1,10 @@
+## Resubmission
+
+This is a resubmission. In this version I have:
+
+- Enclosed the URL in the Description section of the DESCRIPTION file in <> for auto-linking.
+- Added a Code of Conduct.
+
 ## Test environments
 
 * local OS X install, R 3.3.3
