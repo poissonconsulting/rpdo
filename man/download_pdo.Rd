@@ -16,4 +16,3 @@ Downloads PDO index data from
 \details{
 For more information see \url{https://github.com/poissonconsulting/rpdo}.
 }
-

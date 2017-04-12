@@ -7,3 +7,5 @@
 ^README\.Rmd$
 ^README_files$
 ^revdep$
+^appveyor\.yml$
+^codecov\.yml$

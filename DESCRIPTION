@@ -1,8 +1,8 @@
 Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index Data
-Version: 0.2.1.9000
-Date: 2017-01-01
+Version: 0.2.2
+Date: 2017-04-11
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Nathan", "Mantua", email = "nate.mantua@noaa.gov", role = c("aut", "dtc")),
@@ -28,5 +28,6 @@ Imports:
 Suggests:
     devtools,
     ggplot2,
-    testthat
-RoxygenNote: 5.0.1
+    testthat,
+    covr
+RoxygenNote: 6.0.1

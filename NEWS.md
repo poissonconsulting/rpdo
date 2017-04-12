@@ -1,8 +1,12 @@
 # rpdo NEWS
 
+## rpdo v0.2.2
+
+- Added values from December 2016 to February 2017.
+
 ## rpdo v0.2.1
 
-- Added values until November 2016.
+- Added values from April 2016 to November 2016.
 
 ## rpdo v0.2.0
 

@@ -1,12 +1,16 @@
-language: r
-warnings_are_errors: true
-sudo: required
+language: R
+cache: packages
 
-env:
- global:
-   - CRAN: http://cran.rstudio.com
+r_packages:
+  - covr
+
+after_success:
+  - Rscript -e 'covr::codecov()'
 
 notifications:
-  email:
+  email: false
+  slack:
+    rooms:
+      - poissonconsulting:BKjfn7jsVh8zXTu2rq7BEQEb
     on_success: change
-    on_failure: change
+    on_failure: always
