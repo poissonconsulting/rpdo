@@ -9,3 +9,4 @@
 ^revdep$
 ^appveyor\.yml$
 ^codecov\.yml$
+^CONDUCT\.md$

@@ -10,7 +10,7 @@ Authors@R: c(
 Description: Monthly Pacific Decadal Oscillation (PDO) index
     values from January 1900 to February 2017.
     Includes download_pdo() to scrape the latest values from 
-    http://research.jisao.washington.edu/pdo/PDO.latest.
+    <http://research.jisao.washington.edu/pdo/PDO.latest>.
 License: CC0
 URL: https://github.com/poissonconsulting/rpdo
 LazyData: true
