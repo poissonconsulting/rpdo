@@ -27,13 +27,11 @@ tidy_pdo <- function (pdo) {
   months <- c("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
               "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
   pdo <- tidyr::gather_(pdo, "Month", "PDO", months)
-  pdo <- dplyr::rename_(pdo, .dots = list(Year = ~YEAR))
-  pdo$Month <- toupper(pdo$Month)
-  pdo$Month <- factor(pdo$Month, levels = months)
-  pdo <- dplyr::mutate_(pdo, .dots = list(Year = ~as.integer(Year), Month = ~as.integer(Month)))
-  pdo <- dplyr::filter_(pdo, ~!is.na(PDO))
-  pdo <- dplyr::arrange_(pdo, ~Year, ~Month)
-  pdo <- dplyr::as.tbl(pdo)
+  pdo$Month <- as.integer(factor(toupper(pdo$Month), levels = months))
+  pdo$Year <- as.integer(pdo$YEAR)
+  pdo <- pdo[c("Year", "Month", "PDO")]
+  pdo <- pdo[!is.na(pdo$PDO),]
+  pdo <- pdo[order(pdo$Year, pdo$Month),]
   pdo
 }
 

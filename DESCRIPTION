@@ -19,12 +19,12 @@ Depends:
 Imports:
     checkr,
     utils,
-    dplyr,
     readr,
     tidyr
 Suggests:
     ggplot2,
     testthat,
+    tibble,
     covr
 Additional_Repositories: http://poissonconsulting.github.io/drat
 RoxygenNote: 6.0.1
