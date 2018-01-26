@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+[![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![AppVeyor Build
@@ -19,7 +19,7 @@ Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://CRAN.R-pr
 ## Introduction
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO)
-index values from January 1900 to February 2017.
+index values from January 1900 to December 2017.
 
 The function `download_pdo()` scrapes the most recent data from
 <http://research.jisao.washington.edu/pdo/PDO.latest>.

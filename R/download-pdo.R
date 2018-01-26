@@ -18,8 +18,7 @@ read_pdo <- function (pdo) {
   pdo <- lapply(pdo, function(x) c(x, rep(NA, 13 - length(x))))
   pdo <- vapply(pdo, function(x) paste(x, collapse = ","), "")
   pdo <- paste(pdo, collapse = "\n")
-  pdo <- readr::read_csv(pdo)
-  pdo <- as.data.frame(pdo)
+  pdo <- read.csv(text = pdo)
   pdo
 }
 
