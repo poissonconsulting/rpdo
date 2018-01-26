@@ -68,4 +68,3 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ## Information
 
 For more information see <http://research.jisao.washington.edu/pdo/PDO.latest>.
-

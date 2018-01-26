@@ -10,3 +10,5 @@
 ^appveyor\.yml$
 ^codecov\.yml$
 ^CONDUCT\.md$
+^docs$
+^document.R$
