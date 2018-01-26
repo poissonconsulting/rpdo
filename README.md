@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# rpdo
+
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
@@ -14,17 +16,24 @@ CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons
 [![CRAN
 Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://CRAN.R-project.org/package=rpdo)
 
-# rpdo
-
-## Introduction
-
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO)
 index values from January 1900 to December 2017.
 
-The function `download_pdo()` scrapes the most recent data from
+The function `pdo_download()` scrapes the most recent data from
 <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
-## Utilization
+## Installation
+
+To install the most recent release from CRAN
+
+    install.packages("rpdo")
+
+To install the development version from GitHub
+
+    # install.packages("devtools")
+    devtools::install_github("poissonconsulting/rpdo")
+
+## Usage
 
 ``` r
 library(rpdo)
@@ -41,16 +50,26 @@ geom_smooth(span = 0.1, se = FALSE, color = "black", method = 'loess') + geom_po
 ![Pacific Decadal Oscillation (PDO) Index for January by
 year.](tools/README-unnamed-chunk-2-1.png)
 
-## Installation
+## Citation
 
-To install the most recent release from CRAN
+``` 
 
-    install.packages("rpdo")
+To cite package 'rpdo' in publications use:
 
-To install the development version from GitHub
+  Joe Thorley, Nathan Mantua and Steven R. Hare (2018). rpdo:
+  Pacific Decadal Oscillation Index Data. R package version
+  0.2.2.9001. https://github.com/poissonconsulting/rpdo
 
-    # install.packages("devtools")
-    devtools::install_github("rpdo")
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {rpdo: Pacific Decadal Oscillation Index Data},
+    author = {Joe Thorley and Nathan Mantua and Steven R. Hare},
+    year = {2018},
+    note = {R package version 0.2.2.9001},
+    url = {https://github.com/poissonconsulting/rpdo},
+  }
+```
 
 ## Contribution
 
@@ -63,6 +82,11 @@ always welcome.
 Please note that this project is released with a [Contributor Code of
 Conduct](CONDUCT.md). By participating in this project you agree to
 abide by its terms.
+
+## See Also
+
+The `rsoi` package provides El Nino/Southern Oscillation (ENSO) and
+Related Climate Indices.
 
 ## Information
 

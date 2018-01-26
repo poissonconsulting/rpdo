@@ -9,7 +9,7 @@ Authors@R: c(
     person("Steven R.", "Hare", email = "hare@iphc.washington.edu", role = c("aut", "dtc")))
 Description: Monthly Pacific Decadal Oscillation (PDO) index
     values from January 1900 to December 2017.
-    Includes download_pdo() to scrape the latest values from 
+    Includes pdo_download() to scrape the latest values from 
     <http://research.jisao.washington.edu/pdo/PDO.latest>.
 License: CC0
 URL: https://github.com/poissonconsulting/rpdo
