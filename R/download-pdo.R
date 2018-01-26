@@ -66,7 +66,7 @@ check_pdo <- function (pdo) {
 #'
 #' For more information see \url{https://github.com/poissonconsulting/rpdo}.
 #'
-#' @return A data.frame of the PDO index data.
+#' @return A data frame of the PDO index data.
 #' @export
 download_pdo <- function() {
   pdo <- get_pdo()
