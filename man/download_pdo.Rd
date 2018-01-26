@@ -7,7 +7,7 @@
 download_pdo()
 }
 \value{
-A tbl data.frame of the PDO index data.
+A data.frame of the PDO index data.
 }
 \description{
 Downloads PDO index data from

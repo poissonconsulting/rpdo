@@ -20,12 +20,11 @@ Imports:
     checkr,
     utils,
     readr,
-    tidyr
+    stats
 Suggests:
+    covr,
     ggplot2,
-    testthat,
-    tibble,
-    covr
+    testthat
 Additional_Repositories: http://poissonconsulting.github.io/drat
 RoxygenNote: 6.0.1
 LazyData: true

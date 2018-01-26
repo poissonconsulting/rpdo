@@ -19,6 +19,7 @@ read_pdo <- function (pdo) {
   pdo <- vapply(pdo, function(x) paste(x, collapse = ","), "")
   pdo <- paste(pdo, collapse = "\n")
   pdo <- readr::read_csv(pdo)
+  pdo <- as.data.frame(pdo)
   pdo
 }
 
@@ -26,12 +27,13 @@ tidy_pdo <- function (pdo) {
 
   months <- c("JAN", "FEB", "MAR", "APR", "MAY", "JUN",
               "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
-  pdo <- tidyr::gather_(pdo, "Month", "PDO", months)
-  pdo$Month <- as.integer(factor(toupper(pdo$Month), levels = months))
+  pdo <- reshape(pdo, varying = months, timevar = "Month", v.names = "PDO",
+                 idvar = "YEAR", direction = "long")
   pdo$Year <- as.integer(pdo$YEAR)
   pdo <- pdo[c("Year", "Month", "PDO")]
   pdo <- pdo[!is.na(pdo$PDO),]
   pdo <- pdo[order(pdo$Year, pdo$Month),]
+  row.names(pdo) <- NULL
   pdo
 }
 
@@ -65,7 +67,7 @@ check_pdo <- function (pdo) {
 #'
 #' For more information see \url{https://github.com/poissonconsulting/rpdo}.
 #'
-#' @return A tbl data.frame of the PDO index data.
+#' @return A data.frame of the PDO index data.
 #' @export
 download_pdo <- function() {
   pdo <- get_pdo()
