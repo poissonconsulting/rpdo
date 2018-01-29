@@ -1,3 +1,5 @@
+# rpdo 0.2.3
+
 - Removed all dependencies except `stats`, `utils` and `checkr`. 
 - Added values from February 2017 to December 2017.
 
