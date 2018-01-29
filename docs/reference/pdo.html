@@ -107,8 +107,8 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>rpdo</span>)
-<span class='fu'>library</span>(<span class='no'>ggplot2</span>)</div><div class='output co'>#&gt; <span class='message'>Want to understand how all the pieces fit together? See the R for Data</span>
-#&gt; <span class='message'>Science book: http://r4ds.had.co.nz/</span></div><div class='input'>
+<span class='fu'>library</span>(<span class='no'>ggplot2</span>)
+
 <span class='fu'>data</span>(<span class='no'>pdo</span>)
 <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='fu'>subset</span>(<span class='no'>pdo</span>, <span class='no'>pdo</span>$<span class='no'>Month</span> <span class='kw'>==</span> <span class='fl'>1</span>), <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Year</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>PDO</span>)) +
  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_path'>geom_line</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/labs'>ylab</a></span>(<span class='st'>"January PDO Index"</span>)</div><div class='img'><img src='pdo-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
