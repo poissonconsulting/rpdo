@@ -2,13 +2,13 @@
 
 This is a resubmission. In this version I have:
 
-- Enclosed the URL in the Description section of the DESCRIPTION file in <> for auto-linking.
-- Added a Code of Conduct.
+- Removed all dependencies except `stats`, `utils` and `checkr`. 
+- Added values from February 2017 to December 2017.
 
 ## Test environments
 
-* local OS X install, R 3.3.3
-* ubuntu (travis-ci)
+* local OS X install, R 3.4.3
+* ubuntu 12.04 (on travis-ci), R 3.4.3
 * windows (appveyor)
 * win-builder (devel and release)
 
