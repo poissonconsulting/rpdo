@@ -65,36 +65,54 @@
     
 <div class="contents">
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <section id="rpdo" class="level1"><div class="page-header"><h1>rpdo</h1></div>
-<section id="introduction" class="level2"><h2>Introduction</h2>
+
 <p><code>rpdo</code> is an R data package of Monthly Pacific Decadal Oscillation (PDO) index values from January 1900 to December 2017.</p>
-<p>The function <code><a href="reference/download_pdo.html">download_pdo()</a></code> scrapes the most recent data from <a href="http://research.jisao.washington.edu/pdo/PDO.latest" class="uri">http://research.jisao.washington.edu/pdo/PDO.latest</a>.</p>
-</section><section id="utilization" class="level2"><h2>Utilization</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(rpdo)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">data &lt;-<span class="st"> </span>rpdo<span class="op">::</span>pdo</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">data &lt;-<span class="st"> </span><span class="kw">subset</span>(data, data<span class="op">$</span>Month <span class="op">==</span><span class="st"> </span><span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> data, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PDO)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_smooth">geom_smooth</a></span>(<span class="dt">span =</span> <span class="fl">0.1</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">color =</span> <span class="st">"black"</span>, <span class="dt">method =</span> <span class="st">'loess'</span>) <span class="op">+</span><span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/labs">ylab</a></span>(<span class="st">"January PDO Index"</span>)</a></code></pre></div>
+<p>The function <code><a href="reference/pdo_download.html">pdo_download()</a></code> scrapes the most recent data from <a href="http://research.jisao.washington.edu/pdo/PDO.latest" class="uri">http://research.jisao.washington.edu/pdo/PDO.latest</a>.</p>
+<section id="installation" class="level2"><h2>Installation</h2>
+<p>To install the most recent release from CRAN</p>
+<pre><code>install.packages("rpdo")</code></pre>
+<p>To install the development version from GitHub</p>
+<pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
+devtools::install_github("poissonconsulting/rpdo")</a></code></pre>
+</section><section id="usage" class="level2"><h2>Usage</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(rpdo)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">data &lt;-<span class="st"> </span>rpdo<span class="op">::</span>pdo</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">data &lt;-<span class="st"> </span><span class="kw">subset</span>(data, data<span class="op">$</span>Month <span class="op">==</span><span class="st"> </span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> data, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PDO)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_smooth">geom_smooth</a></span>(<span class="dt">span =</span> <span class="fl">0.1</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">color =</span> <span class="st">"black"</span>, <span class="dt">method =</span> <span class="st">'loess'</span>) <span class="op">+</span><span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/labs">ylab</a></span>(<span class="st">"January PDO Index"</span>)</a></code></pre></div>
 <div class="figure">
 <img src="tools/README-unnamed-chunk-2-1.png" alt="Pacific Decadal Oscillation (PDO) Index for January by year." width="480"><p class="caption">
 Pacific Decadal Oscillation (PDO) Index for January by year.
 </p>
 </div>
-</section><section id="installation" class="level2"><h2>Installation</h2>
-<p>To install the most recent release from CRAN</p>
-<pre><code>install.packages("rpdo")</code></pre>
-<p>To install the development version from GitHub</p>
-<pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
-devtools::install_github("rpdo")</a></code></pre>
+</section><section id="citation" class="level2"><h2>Citation</h2>
+<pre><code>
+To cite package 'rpdo' in publications use:
+
+  Joe Thorley, Nathan Mantua and Steven R. Hare (2018). rpdo:
+  Pacific Decadal Oscillation Index Data. R package version 0.2.3.
+  https://github.com/poissonconsulting/rpdo
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {rpdo: Pacific Decadal Oscillation Index Data},
+    author = {Joe Thorley and Nathan Mantua and Steven R. Hare},
+    year = {2018},
+    note = {R package version 0.2.3},
+    url = {https://github.com/poissonconsulting/rpdo},
+  }</code></pre>
 </section><section id="contribution" class="level2"><h2>Contribution</h2>
 <p>Please report any <a href="https://github.com/poissonconsulting/rpdo/issues">issues</a>.</p>
 <p><a href="https://github.com/poissonconsulting/rpdo/pulls">Pull requests</a> are always welcome.</p>
 <p>Please note that this project is released with a <a href="CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
+</section><section id="see-also" class="level2"><h2>See Also</h2>
+<p>The <code>rsoi</code> package provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.</p>
 </section><section id="information" class="level2"><h2>Information</h2>
 <p>For more information see <a href="http://research.jisao.washington.edu/pdo/PDO.latest" class="uri">http://research.jisao.washington.edu/pdo/PDO.latest</a>.</p>
 </section></section>

@@ -57,8 +57,8 @@ year.](tools/README-unnamed-chunk-2-1.png)
 To cite package 'rpdo' in publications use:
 
   Joe Thorley, Nathan Mantua and Steven R. Hare (2018). rpdo:
-  Pacific Decadal Oscillation Index Data. R package version
-  0.2.2.9001. https://github.com/poissonconsulting/rpdo
+  Pacific Decadal Oscillation Index Data. R package version 0.2.3.
+  https://github.com/poissonconsulting/rpdo
 
 A BibTeX entry for LaTeX users is
 
@@ -66,7 +66,7 @@ A BibTeX entry for LaTeX users is
     title = {rpdo: Pacific Decadal Oscillation Index Data},
     author = {Joe Thorley and Nathan Mantua and Steven R. Hare},
     year = {2018},
-    note = {R package version 0.2.2.9001},
+    note = {R package version 0.2.3},
     url = {https://github.com/poissonconsulting/rpdo},
   }
 ```
