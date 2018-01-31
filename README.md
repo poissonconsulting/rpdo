@@ -3,7 +3,7 @@
 
 # rpdo
 
-[![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![Coverage
@@ -55,8 +55,8 @@ year.](tools/README-unnamed-chunk-2-1.png)
 To cite package 'rpdo' in publications use:
 
   Joe Thorley, Nathan Mantua and Steven R. Hare (2018). rpdo:
-  Pacific Decadal Oscillation Index Data. R package version 0.2.3.
-  https://github.com/poissonconsulting/rpdo
+  Pacific Decadal Oscillation Index Data. R package version
+  0.2.3.9000. https://github.com/poissonconsulting/rpdo
 
 A BibTeX entry for LaTeX users is
 
@@ -64,7 +64,7 @@ A BibTeX entry for LaTeX users is
     title = {rpdo: Pacific Decadal Oscillation Index Data},
     author = {Joe Thorley and Nathan Mantua and Steven R. Hare},
     year = {2018},
-    note = {R package version 0.2.3},
+    note = {R package version 0.2.3.9000},
     url = {https://github.com/poissonconsulting/rpdo},
   }
 ```
