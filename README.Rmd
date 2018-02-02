@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
 [![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)]( https://CRAN.R-project.org/package=rpdo)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163733.svg)](https://doi.org/10.5281/zenodo.1163733)
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from `r month.name[rpdo::pdo$Month[1]]` `r rpdo::pdo$Year[1]` to `r month.name[rpdo::pdo$Month[nrow(rpdo::pdo)]]` `r rpdo::pdo$Year[nrow(rpdo::pdo)]`.
