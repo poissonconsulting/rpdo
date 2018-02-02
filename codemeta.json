@@ -9,9 +9,9 @@
   "name": "rpdo: Pacific Decadal Oscillation Index Data",
   "codeRepository": "https://github.com/poissonconsulting/rpdo",
   "issueTracker": "https://github.com/poissonconsulting/rpdo/issues",
-  "datePublished": "2018-01-31",
+  "datePublished": "2018-02-01",
   "license": "https://spdx.org/licenses/CC0-1.0",
-  "version": "0.2.3.9000",
+  "version": "0.2.3.9001",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -118,5 +118,5 @@
   "contIntegration": "https://travis-ci.org/poissonconsulting/rpdo",
   "releaseNotes": "https://github.com/poissonconsulting/rpdo/blob/master/NEWS.md",
   "readme": "https://github.com/poissonconsulting/rpdo/blob/master/README.md",
-  "fileSize": "51.924KB"
+  "fileSize": "51.943KB"
 }
