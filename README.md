@@ -6,8 +6,6 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
 [![License:
@@ -18,7 +16,7 @@ Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)](https://CRAN.R-pr
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163733.svg)](https://doi.org/10.5281/zenodo.1163733)
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO)
-index values from January 1900 to December 2017.
+index values from January 1900 to June 2018.
 
 The function `pdo_download()` scrapes the most recent data from
 <http://research.jisao.washington.edu/pdo/PDO.latest>.
@@ -86,8 +84,8 @@ abide by its terms.
 
 ## See Also
 
-The `rsoi` package provides El Nino/Southern Oscillation (ENSO) and
-Related Climate Indices.
+The [`rsoi`](https://github.com/boshek/rsoi) package provides El
+Nino/Southern Oscillation (ENSO) and Related Climate Indices.
 
 ## Information
 

@@ -16,7 +16,6 @@ knitr::opts_chunk$set(
 
  [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
 [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
@@ -29,20 +28,8 @@ values from `r month.name[rpdo::pdo$Month[1]]` `r rpdo::pdo$Year[1]` to `r month
 The function `pdo_download()` scrapes the most recent 
 data from <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
-## Installation
 
-To install the most recent release from CRAN
-```
-install.packages("rpdo")
-```
-
-To install the development version from GitHub
-```
-# install.packages("devtools")
-devtools::install_github("poissonconsulting/rpdo")
-```
-
-## Usage
+## Demonstration
 
 ```{r, fig.width=5, fig.height=5, warning=FALSE, fig.cap="Pacific Decadal Oscillation (PDO) Index for January by year."}
 library(rpdo)
@@ -54,6 +41,27 @@ data <- subset(data, data$Month == 1)
 
 ggplot(data = data, aes(x = Year, y = PDO)) + 
 geom_smooth(span = 0.1, se = FALSE, color = "black", method = 'loess') + geom_point() + ylab("January PDO Index")
+```
+
+
+## Installation
+
+To install the latest official release from [CRAN](https://CRAN.R-project.org/package=rpdo)
+```
+install.packages("rpdo")
+```
+
+To install the latest development version from [GitHub](https://github.com/poissonconsulting/rpdo)
+```
+# install.packages("devtools")
+devtools::install_github("poissonconsulting/rpdo")
+```
+
+To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
+```
+# install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("rpdo")
 ```
 
 ## Citation
@@ -72,7 +80,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## See Also
 
-The `rsoi` package provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.
+The [`rsoi`](https://github.com/boshek/rsoi) package provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.
 
 ## Information
 
