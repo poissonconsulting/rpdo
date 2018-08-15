@@ -2,12 +2,11 @@
 
 This is a resubmission. In this version I have:
 
-- Removed all dependencies except `stats`, `utils` and `checkr`. 
-- Added values from February 2017 to December 2017.
+- Added values from January 2018 to June 2018.
 
 ## Test environments
 
-* local OS X install, R 3.4.3
+* local OS X install, R 3.5.1
 * ubuntu 12.04 (on travis-ci), R 3.4.3
 * win-builder (devel and release)
 
