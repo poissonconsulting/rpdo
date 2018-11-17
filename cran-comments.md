@@ -11,4 +11,7 @@
 ## Downstream dependencies
 
 rsoi is the only downstream dependency
-Checked rsoi: 0 errors | 0 warnings | 0 notes
+Checked rsoi: 0 errors | 0 warnings | 1 note
+
+The note in rsoi is unrelated to rpdo.
+
