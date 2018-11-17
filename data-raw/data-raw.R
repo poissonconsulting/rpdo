@@ -1,4 +1,4 @@
-library(devtools)
+library(usethis)
 library(tibble)
 library(rpdo)
 

@@ -16,10 +16,10 @@ knitr::opts_chunk$set(
 
  [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
 [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
-[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/grand-total/rpdo)]( https://CRAN.R-project.org/package=rpdo)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163733.svg)](https://doi.org/10.5281/zenodo.1163733)
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
@@ -51,25 +51,6 @@ To install the latest official release from [CRAN](https://CRAN.R-project.org/pa
 install.packages("rpdo")
 ```
 
-To install the latest development version from [GitHub](https://github.com/poissonconsulting/rpdo)
-```
-# install.packages("devtools")
-devtools::install_github("poissonconsulting/rpdo")
-```
-
-To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
-```
-# install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("rpdo")
-```
-
-## Citation
-
-```{r, comment="", echo=FALSE}
-citation(package = 'rpdo')
-```
-
 ## Contribution
 
 Please report any [issues](https://github.com/poissonconsulting/rpdo/issues).
@@ -80,7 +61,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## See Also
 
-The [`rsoi`](https://github.com/boshek/rsoi) package provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.
+The [`rsoi`](https://github.com/boshek/rsoi) package which provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.
 
 ## Information
 

@@ -3,6 +3,7 @@
 export(download_pdo)
 export(pdo_download)
 import(checkr)
+import(err)
 importFrom(stats,reshape)
 importFrom(utils,download.file)
 importFrom(utils,read.csv)

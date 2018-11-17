@@ -51,11 +51,11 @@ check_pdo <- function (pdo) {
 
   old_pdo <- merge(old_pdo, pdo, by = c("Year", "Month"), all.x = TRUE)
 
-  if (any(is.na(old_pdo$PDO.x))) stop("missing PDO index data", call. = FALSE)
-  if (any(old_pdo$PDO.x != old_pdo$PDO.y)) stop("incorrect PDO index data", call. = FALSE)
+  if (any(is.na(old_pdo$PDO.x))) err("missing PDO index data")
+  if (any(old_pdo$PDO.x != old_pdo$PDO.y)) err("incorrect PDO index data")
 
-  if (!any(diff(pdo$Month) %in% c(1, -11))) stop("missing PDO index data", call. = FALSE)
-  if (!any(diff(pdo$Year) %in% c(0, 1))) stop("missing PDO index data", call. = FALSE)
+  if (!any(diff(pdo$Month) %in% c(1, -11))) err("missing PDO index data")
+  if (!any(diff(pdo$Year) %in% c(0, 1))) err("missing PDO index data")
   pdo
 }
 
