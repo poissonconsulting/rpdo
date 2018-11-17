@@ -36,7 +36,7 @@ geom_smooth(span = 0.1, se = FALSE, color = "black", method = 'loess') + geom_po
 ```
 
 ![Pacific Decadal Oscillation (PDO) Index for January by
-year.](tools/README-unnamed-chunk-2-1.png)
+year.](man/figures/README-unnamed-chunk-2-1.png)
 
 ## Installation
 
