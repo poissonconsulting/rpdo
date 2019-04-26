@@ -13,7 +13,7 @@ Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.sv
 [![License:
 CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163733.svg)](https://doi.org/10.5281/zenodo.1163733)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO)
 index values from January 1900 to September 2018.
