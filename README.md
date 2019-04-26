@@ -51,7 +51,7 @@ To install the latest development version from the Poisson drat
     if(!"drat" %in% installed.packages()[,1]) 
       install.packages("drat")
     drat::addRepo("poissonconsulting")
-    install.packages("err")
+    install.packages("rpdo")
 
 To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/rpdo)
