@@ -45,6 +45,13 @@ To install the latest release version from
 
     install.packages("rpdo")
 
+To install the latest development version from
+[GitHub](https://github.com/poissonconsulting/rpdo)
+
+    if(!"remotes" %in% installed.packages()[,1]) 
+      install.packages("remotes")
+    remotes::install_github("poissonconsulting/rpdo")
+
 To install the latest development version from the Poisson drat
 [repository](https://github.com/poissonconsulting/drat)
 
@@ -52,15 +59,6 @@ To install the latest development version from the Poisson drat
       install.packages("drat")
     drat::addRepo("poissonconsulting")
     install.packages("rpdo")
-
-To install the latest development version from
-[GitHub](https://github.com/poissonconsulting/rpdo)
-
-    if(!"devtools" %in% installed.packages()[,1]) 
-      install.packages("devtools")
-    devtools::install_github("poissonconsulting/err")
-    devtools::install_github("poissonconsulting/checkr")
-    devtools::install_github("poissonconsulting/rpdo")
 
 ## See Also
 
