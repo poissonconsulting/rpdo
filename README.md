@@ -10,6 +10,7 @@ Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https:/
 status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
+[![status](https://tinyverse.netlify.com/badge/rpdo)](https://CRAN.R-project.org/package=rpdo)
 [![License:
 CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
@@ -41,7 +42,7 @@ year.](man/figures/README-unnamed-chunk-2-1.png)
 ## Installation
 
 To install the latest release version from
-[CRAN](https://cran.r-project.org)
+[CRAN](https://cran.r-project.org/package=rpdo)
 
     install.packages("rpdo")
 
