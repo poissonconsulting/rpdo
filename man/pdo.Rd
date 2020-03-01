@@ -25,6 +25,7 @@ library(ggplot2)
 
 data(pdo)
 ggplot(data = subset(pdo, pdo$Month == 1), aes(x = Year, y = PDO)) +
- geom_line() + ylab("January PDO Index")
+  geom_line() +
+  ylab("January PDO Index")
 }
 \keyword{datasets}

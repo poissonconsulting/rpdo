@@ -40,8 +40,10 @@ data <- rpdo::pdo
 
 data <- subset(data, data$Month == 1)
 
-ggplot(data = data, aes(x = Year, y = PDO)) + 
-geom_smooth(span = 0.1, se = FALSE, color = "black", method = 'loess') + geom_point() + ylab("January PDO Index")
+ggplot(data = data, aes(x = Year, y = PDO)) +
+  geom_smooth(span = 0.1, se = FALSE, color = "black", method = "loess") +
+  geom_point() +
+  ylab("January PDO Index")
 ```
 
 ## Installation
