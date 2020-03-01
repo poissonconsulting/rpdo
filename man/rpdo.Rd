@@ -3,7 +3,6 @@
 \docType{package}
 \name{rpdo}
 \alias{rpdo}
-\alias{rpdo-package}
 \title{rpdo}
 \description{
 Monthly Pacific Decadal Oscillation (PDO) index

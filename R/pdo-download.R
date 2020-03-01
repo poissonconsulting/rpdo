@@ -42,10 +42,10 @@ check_pdo <- function (pdo) {
   check_data(pdo, values = list(
     Year = c(1900L, as.integer(format(Sys.Date(), "%Y"))),
     Month = c(1L, 12L),
-    PDO = c(-4, 4)
+    PDO = c(-4.1, 4.1)
   ),
   exclusive = TRUE,
-  nrow = c(1406, Inf),
+  nrow = c(1406L, 2147483647L),
   order = TRUE,
   key = c("Year", "Month"))
 
