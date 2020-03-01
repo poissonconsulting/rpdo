@@ -1,11 +1,11 @@
 #' Download PDO Index Data
 #'
 #' Downloads PDO index data from
-#' \url{http://research.jisao.washington.edu/pdo/PDO.latest}.
+#' <http://research.jisao.washington.edu/pdo/PDO.latest>.
 #'
-#' \code{download_pdo()} is an alias for \code{pdo_download()}.
+#' `download_pdo()` is an alias for `pdo_download()`.
 #'
-#' For more information see \url{https://github.com/poissonconsulting/rpdo}.
+#' For more information see <https://github.com/poissonconsulting/rpdo>.
 #'
 #' @return A data frame of the PDO index data.
 #' @export

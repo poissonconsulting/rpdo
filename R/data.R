@@ -2,7 +2,7 @@
 #'
 #' Monthly Pacific Decadal Oscillation (PDO) index values.
 #'
-#' For more information see \url{https://github.com/poissonconsulting/rpdo}.
+#' For more information see <https://github.com/poissonconsulting/rpdo>.
 #'
 #' @format A tbl data frame:
 #' \describe{
