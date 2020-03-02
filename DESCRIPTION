@@ -10,7 +10,7 @@ Description: Monthly Pacific Decadal Oscillation (PDO) index
     values from January 1900 to present.
 License: CC0
 Depends:
-    R (>= 3.1.0)
+    R (>= 3.3)
 Imports:
     chk,
     utils,
