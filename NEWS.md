@@ -1,6 +1,6 @@
 # rpdo 0.3.0
 
-- Added values from September 2018 to December 2019.
+- Replaced dependency on `checkr` with `chk`.
 
 # rpdo 0.2.5
 

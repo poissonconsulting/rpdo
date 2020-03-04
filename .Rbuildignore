@@ -17,3 +17,4 @@
 ^codemeta\.json$
 ^build\.R$
 ^\.Rprofile$
+^CODE_OF_CONDUCT\.md$

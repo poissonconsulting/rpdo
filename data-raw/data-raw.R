@@ -1,9 +1,5 @@
-library(usethis)
-library(tibble)
-library(rpdo)
+pdo <- rpdo::pdo_download()
 
-pdo <- pdo_download()
+pdo <- tibble::as_tibble(pdo)
 
-pdo <- as_tibble(pdo)
-
-use_data(pdo, overwrite = TRUE)
+usethis::use_data(pdo, overwrite = TRUE)

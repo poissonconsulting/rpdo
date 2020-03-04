@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 # rpdo
 
- [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+<!-- badges: start --> [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
@@ -22,6 +22,7 @@ knitr::opts_chunk$set(
 [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
+<!-- badges: end -->
 
 `rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
 values from `r month.name[rpdo::pdo$Month[1]]` `r rpdo::pdo$Year[1]` to `r month.name[rpdo::pdo$Month[nrow(rpdo::pdo)]]` `r rpdo::pdo$Year[nrow(rpdo::pdo)]`.
@@ -48,22 +49,20 @@ ggplot(data = data, aes(x = Year, y = PDO)) +
 
 ## Installation
 
-To install the latest release version from [CRAN](https://cran.r-project.org/package=rpdo)
-```
+To install the latest release from [CRAN](https://cran.r-project.org)
+```{r, eval=FALSE}
 install.packages("rpdo")
 ```
 
-To install the latest development version from [GitHub](https://github.com/poissonconsulting/rpdo)
-```
-if(!"remotes" %in% installed.packages()[,1]) 
-  install.packages("remotes")
+To install the developmental version from [GitHub](https://github.com/poissonconsulting/rpdo)
+```{r, eval=FALSE}
+# install.packages("remotes")
 remotes::install_github("poissonconsulting/rpdo")
 ```
 
-To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
-```
-if(!"drat" %in% installed.packages()[,1]) 
-  install.packages("drat")
+To install the latest developmental release from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
+```{r, eval=FALSE}
+# install.packages("drat")
 drat::addRepo("poissonconsulting")
 install.packages("rpdo")
 ```
@@ -75,3 +74,14 @@ The [`rsoi`](https://github.com/boshek/rsoi) package which provides El Nino/Sout
 ## Information
 
 For more information see <http://research.jisao.washington.edu/pdo/PDO.latest>.
+
+## Contribution
+
+Please report any [issues](https://github.com/poissonconsulting/rpdo/issues).
+
+[Pull requests](https://github.com/poissonconsulting/rpdo/pulls) are always welcome.
+
+### Code of Conduct
+
+Please note that the rpdo project is released with a [Contributor Code of Conduct](https://www.contributor-covenant.org/version/1/0/0/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
+
