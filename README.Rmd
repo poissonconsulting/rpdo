@@ -14,7 +14,8 @@ knitr::opts_chunk$set(
 
 # rpdo
 
-<!-- badges: start --> [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+<!-- badges: start -->
+[![lifecycle](https://img.shields.io/badge/lifecycle-superseded-orange.svg)](https://www.tidyverse.org/lifecycle/#superseded)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
@@ -24,12 +25,13 @@ knitr::opts_chunk$set(
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
 <!-- badges: end -->
 
-`rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO) index 
+`rpdo` has been superseded by the [`rsoi`](https://github.com/boshek/rsoi) package which includes the historical and most recent monthly PDO index values together with related climate indices.
+
+`rpdo` is an R data package of monthly Pacific Decadal Oscillation (PDO) index 
 values from `r month.name[rpdo::pdo$Month[1]]` `r rpdo::pdo$Year[1]` to `r month.name[rpdo::pdo$Month[nrow(rpdo::pdo)]]` `r rpdo::pdo$Year[nrow(rpdo::pdo)]`.
 
-The function `pdo_download()` scrapes the most recent 
-data from <http://research.jisao.washington.edu/pdo/PDO.latest>.
-
+The function `pdo_download()` scrapes the 
+data from the no longer updated <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
 ## Demonstration
 
@@ -69,7 +71,7 @@ install.packages("rpdo")
 
 ## See Also
 
-The [`rsoi`](https://github.com/boshek/rsoi) package which provides El Nino/Southern Oscillation (ENSO) and Related Climate Indices.
+
 
 ## Information
 

@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-superseded-orange.svg)](https://www.tidyverse.org/lifecycle/#superseded)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
 [![AppVeyor build
@@ -19,11 +19,16 @@ CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
 <!-- badges: end -->
 
-`rpdo` is an R data package of Monthly Pacific Decadal Oscillation (PDO)
+`rpdo` has been superseded by the
+[`rsoi`](https://github.com/boshek/rsoi) package which includes the
+historical and most recent monthly PDO index values together with
+related climate indices.
+
+`rpdo` is an R data package of monthly Pacific Decadal Oscillation (PDO)
 index values from January 1900 to September 2018.
 
-The function `pdo_download()` scrapes the most recent data from
-<http://research.jisao.washington.edu/pdo/PDO.latest>.
+The function `pdo_download()` scrapes the data from the no longer
+updated <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
 ## Demonstration
 
@@ -39,6 +44,7 @@ ggplot(data = data, aes(x = Year, y = PDO)) +
   geom_smooth(span = 0.1, se = FALSE, color = "black", method = "loess") +
   geom_point() +
   ylab("January PDO Index")
+#> `geom_smooth()` using formula 'y ~ x'
 ```
 
 ![Pacific Decadal Oscillation (PDO) Index for January by
@@ -70,9 +76,6 @@ install.packages("rpdo")
 ```
 
 ## See Also
-
-The [`rsoi`](https://github.com/boshek/rsoi) package which provides El
-Nino/Southern Oscillation (ENSO) and Related Climate Indices.
 
 ## Information
 
