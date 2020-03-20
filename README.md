@@ -34,6 +34,7 @@ updated <http://research.jisao.washington.edu/pdo/PDO.latest>.
 
 ``` r
 library(rpdo)
+#> rpdo has been superseded by rsoi
 library(ggplot2)
 
 data <- rpdo::pdo
