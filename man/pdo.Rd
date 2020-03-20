@@ -4,12 +4,14 @@
 \name{pdo}
 \alias{pdo}
 \title{Pacific Decadal Oscillation Index}
-\format{A tbl data frame:
+\format{
+A tbl data frame:
 \describe{
 \item{Year}{The year as an integer.}
 \item{Month}{The month as an integer.}
 \item{PDO}{The Pacific Decadal Oscillation index as a numeric.}
-}}
+}
+}
 \usage{
 pdo
 }
