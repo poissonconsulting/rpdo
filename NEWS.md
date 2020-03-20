@@ -1,7 +1,7 @@
-# rpdo 0.3.0.9000
+# rpdo 0.3.0.9001
 
-- Internal changes only.
-
+- Superseded by rsoi.
+- No longer support R 3.3
 
 # rpdo 0.3.0
 
