@@ -10,14 +10,12 @@ output: github_document
 
 <!-- badges: start -->
 [![lifecycle](https://img.shields.io/badge/lifecycle-superseded-orange.svg)](https://www.tidyverse.org/lifecycle/#superseded)
-[![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/rpdo.svg?branch=master)](https://travis-ci.org/poissonconsulting/rpdo)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/rpdo?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/rpdo)
+[![R build status](https://github.com/poissonconsulting/rpdo/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/rpdo/actions)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
 [![status](https://tinyverse.netlify.com/badge/rpdo)](https://CRAN.R-project.org/package=rpdo)
 [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
-[![R build status](https://github.com/poissonconsulting/rpdo/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/rpdo/actions)
 [![Codecov test coverage](https://codecov.io/gh/poissonconsulting/rpdo/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/rpdo?branch=master)
 <!-- badges: end -->
 
@@ -35,8 +33,6 @@ data from the no longer updated <http://research.jisao.washington.edu/pdo/PDO.la
 ```r
 library(rpdo)
 library(ggplot2)
-#> Need help? Try Stackoverflow:
-#> https://stackoverflow.com/tags/ggplot2
 
 data <- rpdo::pdo
 
