@@ -19,3 +19,4 @@
 ^\.Rprofile$
 ^CODE_OF_CONDUCT\.md$
 ^\.github$
+^\.gitignore$
