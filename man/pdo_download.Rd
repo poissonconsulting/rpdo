@@ -13,11 +13,13 @@ download_pdo()
 A data frame of the PDO index data.
 }
 \description{
-Downloads PDO index data from
+Downloads PDO index data from the no longer updated
 \url{http://research.jisao.washington.edu/pdo/PDO.latest}.
 }
 \details{
-\code{download_pdo()} is an alias for \code{pdo_download()}.
+\lifecycle{soft-deprecated}
 
-For more information see \url{https://github.com/poissonconsulting/rpdo}.
+Deprecated for \code{\link[rsoi:download_pdo]{rsoi::download_pdo()}}.
+
+\code{download_pdo()} is an alias for \code{pdo_download()}.
 }

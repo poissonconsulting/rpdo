@@ -1,7 +1,7 @@
-# rpdo 0.3.0.9001
+# rpdo 0.3.1
 
 - Superseded by rsoi.
-- No longer support R 3.3
+- No longer supports R 3.3.
 
 # rpdo 0.3.0
 

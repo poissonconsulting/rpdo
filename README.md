@@ -8,14 +8,12 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-superseded-orange.svg)](https://www.tidyverse.org/lifecycle/#superseded)
 [![R build
 status](https://github.com/poissonconsulting/rpdo/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/rpdo/actions)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/poissonconsulting/rpdo/master.svg)](https://codecov.io/github/poissonconsulting/rpdo?branch=master)
-[![status](https://tinyverse.netlify.com/badge/rpdo)](https://CRAN.R-project.org/package=rpdo)
+[![Codecov test
+coverage](https://codecov.io/gh/poissonconsulting/rpdo/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/rpdo?branch=master)
 [![License:
 CC0](https://img.shields.io/badge/License-CC0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/rpdo)](https://cran.r-project.org/package=rpdo)
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo) [![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/rpdo/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/rpdo?branch=master)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/rpdo)
 <!-- badges: end -->
 
 `rpdo` has been superseded by the

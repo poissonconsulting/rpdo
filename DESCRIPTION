@@ -1,13 +1,14 @@
 Package: rpdo
 Type: Package
 Title: Pacific Decadal Oscillation Index Data
-Version: 0.3.0.9001
+Version: 0.3.1
 Authors@R: c(
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Nathan", "Mantua", email = "nate.mantua@noaa.gov", role = c("aut", "dtc")),
     person("Steven R.", "Hare", email = "hare@iphc.washington.edu", role = c("aut", "dtc")))
 Description: Monthly Pacific Decadal Oscillation (PDO) index
-    values from January 1900 to present.
+    values from January 1900 to September 2018. 
+    Superseded by 'rsoi' package which provides up to date values.
 License: CC0
 URL: https://github.com/poissonconsulting/rpdo
 BugReports: https://github.com/poissonconsulting/rpdo/issues
@@ -16,12 +17,15 @@ Depends:
 Imports:
     chk,
     utils,
-    stats
+    stats,
+    lifecycle
 Suggests:
     covr,
     ggplot2,
+    rlang,
     testthat
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1.9000
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
+RdMacros: lifecycle
