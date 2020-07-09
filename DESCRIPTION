@@ -8,7 +8,8 @@ Authors@R: c(
     person("Steven R.", "Hare", email = "hare@iphc.washington.edu", role = c("aut", "dtc")))
 Description: Monthly Pacific Decadal Oscillation (PDO) index
     values from January 1900 to September 2018. 
-    Superseded by 'rsoi' package which provides up to date values.
+    Superseded by 'rsoi' package which includes the historical and 
+    most recent monthly PDO index values together with related climate indices.
 License: CC0
 URL: https://github.com/poissonconsulting/rpdo
 BugReports: https://github.com/poissonconsulting/rpdo/issues
