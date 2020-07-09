@@ -1,6 +1,6 @@
 # rpdo 0.3.1
 
-- Superseded by rsoi.
+- Superseded by `rsoi` package which includes the historical and most recent monthly PDO index values together with related climate indices.
 - No longer supports R 3.3.
 
 # rpdo 0.3.0
