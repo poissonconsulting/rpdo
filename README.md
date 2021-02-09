@@ -5,7 +5,8 @@
 
 <!-- badges: start -->
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-superseded-orange.svg)](https://www.tidyverse.org/lifecycle/#superseded)
+[![Lifecycle:
+superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
 [![R build
 status](https://github.com/poissonconsulting/rpdo/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/rpdo/actions)
 [![Codecov test
