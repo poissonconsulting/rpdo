@@ -12,7 +12,7 @@ release 4.0.2
 
 0 errors | 0 warnings | 1 note
 
-> Possibly mis-spelled words in DESCRIPTION:
-  indices (12:72)
-  
-The word is spelt correctly.
+
+> Package unavailable to check Rd xrefs: 'rsoi'
+
+`rsoi` is on CRAN but it seems unnecessary to add it as a dependency just because it is referenced in the text
