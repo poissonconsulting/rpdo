@@ -13,7 +13,9 @@
 #' @export
 pdo_download <- function() {
   lifecycle::deprecate_warn(
-    "0.3.1", "pdo_download()", "rsoi::download_pdo()", id = "pdo_download")
+    "0.3.1", "pdo_download()", "rsoi::download_pdo()",
+    id = "pdo_download"
+  )
 
   pdo <- get_pdo()
   pdo <- clean_pdo(pdo)
@@ -26,7 +28,9 @@ pdo_download <- function() {
 #' @export
 download_pdo <- function() {
   lifecycle::deprecate_warn(
-    "0.3.1", "pdo_download()", "rsoi::download_pdo()", id = "pdo_download")
+    "0.3.1", "pdo_download()", "rsoi::download_pdo()",
+    id = "pdo_download"
+  )
 
   pdo_download()
 }
