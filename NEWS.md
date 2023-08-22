@@ -2,12 +2,7 @@
 
 # rpdo 0.3.2
 
-- Same as previous version.
-
-
-# rpdo 0.3.1.9000
-
-- Same as previous version.
+- Update package documentation.
 
 
 # rpdo 0.3.1
