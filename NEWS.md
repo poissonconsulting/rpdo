@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# rpdo 0.3.2.9000
+
+- Same as previous version.
+
+
 # rpdo 0.3.2
 
 - Update package documentation.
