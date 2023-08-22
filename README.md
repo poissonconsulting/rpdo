@@ -7,7 +7,7 @@
 
 [![Lifecycle:
 superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
-[![R-CMD-check](https://github.com/poissonconsulting/rpdo/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/rpdo/actions)
+[![R-CMD-check](https://github.com/poissonconsulting/rpdo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/rpdo/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/rpdo/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/rpdo?branch=master)
 [![License:
@@ -42,11 +42,15 @@ ggplot(data = data, aes(x = Year, y = PDO)) +
   geom_smooth(span = 0.1, se = FALSE, color = "black", method = "loess") +
   geom_point() +
   ylab("January PDO Index")
-#> `geom_smooth()` using formula 'y ~ x'
+#> `geom_smooth()` using formula = 'y ~ x'
 ```
 
-![Pacific Decadal Oscillation (PDO) Index for January by
-year.](man/figures/README-unnamed-chunk-2-1.png)
+<figure>
+<img src="man/figures/README-unnamed-chunk-2-1.png"
+alt="Pacific Decadal Oscillation (PDO) Index for January by year." />
+<figcaption aria-hidden="true">Pacific Decadal Oscillation (PDO) Index
+for January by year.</figcaption>
+</figure>
 
 ## Installation
 
